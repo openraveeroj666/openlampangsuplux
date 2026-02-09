@@ -1,0 +1,168 @@
+/* ========== ตั้งตั้ค่าค่ พื้นพื้ ฐาน ========== */
+2 * {
+3 margin: 0;
+4 padding: 0;
+5 box-sizing: border-box;
+6 }
+7
+8 body {
+9 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+10 line-height: 1.6;
+11 color: #333;
+12 background-color: #FFF8DC;
+13 }
+14
+15 .container {
+16 max-width: 1200px;
+17 margin: 0 auto;
+18 padding: 0 20px;
+19 }
+20
+21 /* ========== Header และ Navigation ========== */
+22 header {
+23 background: linear-gradient(135deg, #F4A460 0%, #D2691E 100%);
+24 box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+25 position: sticky;
+26 top: 0;
+27 z-index: 1000;
+28 }
+29
+30 header .container {
+31 display: flex;
+32 justify-content: space-between;
+33 align-items: center;
+34 padding: 15px 20px;
+35 }
+36
+37 .logo h1 {
+38 color: white
+39 font-size: 24px;
+40 font-weight: bold;
+41 }
+42
+43 nav ul {
+44 display: flex;
+45 list-style: none;
+46 gap: 10px;
+47 }
+48
+49 nav ul li a {
+50 color: white
+51 text-decoration: none;
+1/22/26, 4:04 PM styles.css
+
+localhost:55985/03a38863-2c03-4050-bf42-5b2fb09fe71a/ 1/9
+
+52 padding: 10px 20px;
+53 border-radius: 5px;
+54 transition: all 0.3s ease;
+55 font-weight: 500;
+56 }
+57
+58 nav ul li a:hover,
+59 nav ul li a.active {
+60 background-color: rgba(255, 255, 255, 0.2);
+61 transform: translateY(-2px);
+62 }
+63
+64 /* ========== Hero Section ========== */
+65 .hero {
+66 background: linear-gradient(rgba(244, 164, 96, 0.8), rgba(210, 105, 30, 0.8)),
+67 url('images/lampang2.jpg') center/cover;
+68 height: 500px;
+69 display: flex;
+70 align-items: center;
+71 justify-content: center;
+72 text-align: center;
+73 color: white
+74 }
+75
+76 .hero-content h2 {
+77 font-size: 48px;
+78 margin-bottom: 20px;
+79 text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+80 }
+81
+82 .hero-content p {
+83 font-size: 24px;
+84 margin-bottom: 30px;
+85 text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+86 }
+87
+88 .btn {
+89 display: inline-block;
+90 padding: 15px 40px;
+91 background-color: #FFD700;
+92 color: #333;
+93 text-decoration: none;
+94 border-radius: 50px;
+95 font-weight: bold;
+96 transition: all 0.3s ease;
+97 box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+98 }
+99
+100 .btn:hover {
+101 background-color: #FFA500;
+102 transform: translateY(-3px);
+103 box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+104 }
+105
+1/22/26, 4:04 PM styles.css
+
+localhost:55985/03a38863-2c03-4050-bf42-5b2fb09fe71a/ 2/9
+
+106 /* ========== Section Title ========== */
+107 .section-title {
+108 text-align: center;
+109 font-size: 36px;
+110 color: #8B4513;
+111 margin-bottom: 50px;
+112 position: relative;
+113 padding-bottom: 15px;
+114 }
+115
+116 .section-title::after {
+117 content: '';
+118 position: absolute;
+119 bottom: 0;
+120 left: 50%;
+121 transform: translateX(-50%);
+122 width: 100px;
+123 height: 4px;
+124 background: linear-gradient(90deg, #F4A460, #FFD700);
+125 border-radius: 2px;
+126 }
+127
+128 /* ========== About Section ========== */
+129 .about {
+130 padding: 80px 0;
+131 background-color: white
+132 }
+133
+134 .content-wrapper {
+135 display: flex;
+136 align-items: center;
+137 gap: 50px;
+138 }
+139
+140 .content-text {
+141 flex: 1;
+142 }
+143
+144 .content-text p {
+145 font-size: 18px;
+146 margin-bottom: 20px;
+147 text-align: justify;
+148 line-height: 1.8;
+149 }
+150
+151 .content-image {
+152 flex: 1;
+153 }
+154
+155 .content-image img {
+156 width: 100%;
+157 border-radius: 15px;
+158 box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+159 transition: transform 0.3s ease;
+}
